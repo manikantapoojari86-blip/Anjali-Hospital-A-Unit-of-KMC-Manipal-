@@ -1,0 +1,6 @@
+{
+  "name": "Anjali Hospital (A Unit of KMC Manipal) - Online Appointment & Consultation Booking",
+  "description": "Official healthcare portal and online doctor appointment booking for Anjali Hospital (A Unit of KMC Manipal) in Byndoor, Udupi. Dialysis, 24/7 Emergency care, and Multi-specialty OPD Consultations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

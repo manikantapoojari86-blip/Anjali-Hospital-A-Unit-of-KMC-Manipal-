@@ -1,0 +1,953 @@
+{
+  "settings": {
+    "id": "main",
+    "name": "Anjali Hospital (A Unit of KMC Manipal)",
+    "shortName": "Anjali Hospital",
+    "tagline": "Advanced Multi-Specialty Hospital, Dialysis Center & 24/7 Emergency Care in Byndoor",
+    "inaugurationNote": "Inaugurated on March 8, 2025 by Dr. H. S. Ballal, Pro Chancellor of MAHE Manipal, bringing KMC Manipal tertiary care excellence directly to coastal Byndoor.",
+    "parentAffiliation": "Kasturba Hospital, KMC Manipal / MAHE",
+    "address": "NH 66, Baindur, Kundapur Taluk, Udupi District, Karnataka - 576214",
+    "phone": "082542 51805",
+    "emergencyPhone": "+91 82542 51805",
+    "whatsapp": "+91 82542 51805",
+    "email": "consultations@anjalihospitalbyndoor.in",
+    "mapsUrl": "https://maps.app.goo.gl/jVtpyUdYi1DoFa2B6",
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=13.8662379,74.6293119",
+    "mapsEmbedQuery": "Anjali Hospital Byndoor Karnataka",
+    "coordinates": {
+      "lat": 13.8662379,
+      "lng": 74.6293119
+    },
+    "rating": 3.7,
+    "reviewCount": 42,
+    "operatingHours": {
+      "monday": {
+        "open": "08:30",
+        "close": "18:00",
+        "emergency": "24 Hours",
+        "dialysis": "06:00 - 22:00"
+      },
+      "tuesday": {
+        "open": "08:30",
+        "close": "18:00",
+        "emergency": "24 Hours",
+        "dialysis": "06:00 - 22:00"
+      },
+      "wednesday": {
+        "open": "08:30",
+        "close": "18:00",
+        "emergency": "24 Hours",
+        "dialysis": "06:00 - 22:00"
+      },
+      "thursday": {
+        "open": "08:30",
+        "close": "18:00",
+        "emergency": "24 Hours",
+        "dialysis": "06:00 - 22:00"
+      },
+      "friday": {
+        "open": "08:30",
+        "close": "18:00",
+        "emergency": "24 Hours",
+        "dialysis": "06:00 - 22:00"
+      },
+      "saturday": {
+        "open": "08:30",
+        "close": "18:00",
+        "emergency": "24 Hours",
+        "dialysis": "06:00 - 22:00"
+      },
+      "sunday": {
+        "open": "09:00",
+        "close": "13:00",
+        "emergency": "24 Hours",
+        "dialysis": "06:00 - 22:00"
+      }
+    },
+    "currency": "₹",
+    "timezone": "Asia/Kolkata",
+    "slotDurationMinutes": 20,
+    "bufferMinutes": 10,
+    "minAdvanceHours": 2,
+    "maxAdvanceDays": 30,
+    "allowReschedule": true,
+    "rescheduleNoticeHours": 2,
+    "cancellationPolicy": "Appointments can be rescheduled or cancelled up to 2 hours before the scheduled appointment time at no charge. For acute emergencies, walk into Casualty 24x7 without prior appointment.",
+    "paymentMode": "pay_at_hospital"
+  },
+  "services": [
+    {
+      "id": "srv_dialysis",
+      "name": "Advanced Hemodialysis Session (KMC Manipal Protocol)",
+      "shortCode": "DIALYSIS",
+      "category": "Specialized Care",
+      "description": "High-flux dialysis with reverse osmosis purification, supervised by nephrology-trained clinicians following KMC Manipal clinical protocols.",
+      "clinicalDetails": "Multi-station dialysis unit inaugurated in March 2025 to spare coastal Byndoor renal patients long travels to Kundapura/Manipal. Includes vitals monitoring and nephrologist consultation review.",
+      "price": 1500,
+      "durationMinutes": 240,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_nephro"
+      ],
+      "preparationNotes": "Please carry your recent Creatinine, Urea, and Hb reports. Arrive 15 minutes before the shift time."
+    },
+    {
+      "id": "srv_emergency",
+      "name": "24x7 Emergency Casualty & Trauma Triage",
+      "shortCode": "EMERGENCY",
+      "category": "Emergency",
+      "description": "Immediate medical officer consultation, acute cardiac stabilization, trauma wound care, oxygen therapy, and fast-track triage.",
+      "clinicalDetails": "Fully staffed 24-hour emergency room on NH 66 equipped with crash cart, ECG, defibrillator, and dedicated ambulance service.",
+      "price": 350,
+      "durationMinutes": 30,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_emergency"
+      ],
+      "preparationNotes": "Critical emergencies are attended immediately upon arrival. Advance booking helps the triage team prepare."
+    },
+    {
+      "id": "srv_cardio",
+      "name": "Cardiology Specialist OPD (Visiting KMC Manipal)",
+      "shortCode": "CARDIO",
+      "category": "Specialty OPD",
+      "description": "Specialist cardiac evaluation, hypertension management, post-stent followup, ECG analysis, and angina workup by senior KMC Manipal cardiologists.",
+      "clinicalDetails": "Visiting cardiology clinic organized under the KMC Manipal collaboration to provide tertiary heart care locally.",
+      "price": 500,
+      "durationMinutes": 20,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_cardio"
+      ],
+      "preparationNotes": "Please bring past ECGs, Echo reports, and current cardiac medication prescriptions."
+    },
+    {
+      "id": "srv_ortho",
+      "name": "Orthopaedics & Joint Care Consultation",
+      "shortCode": "ORTHO",
+      "category": "Specialty OPD",
+      "description": "Bone, joint, spinal pain, sports injury assessment, osteoarthritis management, and fracture post-op review by visiting KMC orthopaedic surgeons.",
+      "clinicalDetails": "Specialized musculoskeletal examinations, digital X-ray review, joint aspiration, and physical rehab planning.",
+      "price": 450,
+      "durationMinutes": 20,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_ortho"
+      ],
+      "preparationNotes": "Bring previous X-rays or MRI scans if available."
+    },
+    {
+      "id": "srv_obg",
+      "name": "Obstetrics & Gynaecology (Maternity & Women)",
+      "shortCode": "OBG",
+      "category": "Specialty OPD",
+      "description": "Antenatal checkups, high-risk pregnancy screening, PCOS/PCOD management, menstrual disorder care, and menopause consultations.",
+      "clinicalDetails": "Compassionate maternal and adolescent women’s healthcare with dedicated private examination facilities.",
+      "price": 450,
+      "durationMinutes": 20,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_obg"
+      ],
+      "preparationNotes": "Bring prior ultrasound scan reports and maternal health record booklets."
+    },
+    {
+      "id": "srv_eye",
+      "name": "Ophthalmology (Eye Care & Vision Clinic)",
+      "shortCode": "EYE",
+      "category": "Specialty OPD",
+      "description": "Refraction & eye pressure check, cataract screening, diabetic retinopathy review, red eye/allergy treatment, and foreign body removal.",
+      "clinicalDetails": "Slit-lamp biomicroscopy, visual acuity testing, and ophthalmoscopy for all age groups.",
+      "price": 400,
+      "durationMinutes": 20,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_eye"
+      ],
+      "preparationNotes": "If you wear glasses or contact lenses, please bring them along."
+    },
+    {
+      "id": "srv_gisurgery",
+      "name": "GI Surgery & Gastroenterology Consultation",
+      "shortCode": "GISURGERY",
+      "category": "Specialty OPD",
+      "description": "Abdominal pain investigation, gall bladder disease, hernia evaluation, acid peptic disorders, and laparoscopic surgical consultations.",
+      "clinicalDetails": "Visiting GI surgical team from KMC Manipal for pre-surgical evaluations and non-operative digestive management.",
+      "price": 500,
+      "durationMinutes": 20,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_gisurg"
+      ],
+      "preparationNotes": "Fast for 4 hours prior if abdominal ultrasound is anticipated."
+    },
+    {
+      "id": "srv_genmed",
+      "name": "General Medicine & Diabetology",
+      "shortCode": "GENMED",
+      "category": "Primary Care",
+      "description": "Comprehensive adult health, chronic diabetes & blood pressure monitoring, viral fevers, respiratory infections, and preventive health checks.",
+      "clinicalDetails": "Senior internal medicine physician with decades of clinical experience in coastal Karnataka.",
+      "price": 350,
+      "durationMinutes": 15,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_genmed"
+      ],
+      "preparationNotes": "Bring your daily blood glucose log or latest HbA1c report."
+    },
+    {
+      "id": "srv_paed",
+      "name": "Paediatrics & Child Health Care",
+      "shortCode": "PAED",
+      "category": "Primary Care",
+      "description": "Infant growth tracking, childhood immunizations, viral fever, asthma management, and newborn care.",
+      "clinicalDetails": "Gentle, child-friendly pediatric consultation room designed for patient comfort.",
+      "price": 400,
+      "durationMinutes": 20,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_genmed"
+      ],
+      "preparationNotes": "Bring the child vaccination booklet."
+    },
+    {
+      "id": "srv_lab",
+      "name": "Diagnostic Pathology & Lab Screening",
+      "shortCode": "LAB",
+      "category": "Diagnostics",
+      "description": "Comprehensive diagnostic blood panels, renal profiles, lipid profiles, liver function, and thyroid screening.",
+      "clinicalDetails": "Rapid automated biochemistry analyzer with computerized reporting.",
+      "price": 300,
+      "durationMinutes": 15,
+      "isActive": true,
+      "assignedStaffIds": [
+        "doc_genmed"
+      ],
+      "preparationNotes": "Morning fasting of 8-10 hours recommended for fasting blood sugar and lipid profile."
+    }
+  ],
+  "staff": [
+    {
+      "id": "doc_genmed",
+      "name": "Dr. K. Narayana Bhat",
+      "title": "Senior Consultant Physician",
+      "degrees": "MBBS, MD (General Medicine)",
+      "department": "General Medicine & Diabetology",
+      "specialty": "Internal Medicine, Diabetes & Preventive Health",
+      "isVisitingKMC": false,
+      "availableDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "workingHours": {
+        "start": "09:00",
+        "end": "17:30",
+        "breakStart": "13:00",
+        "breakEnd": "14:00"
+      },
+      "serviceIds": [
+        "srv_genmed",
+        "srv_paed",
+        "srv_lab"
+      ],
+      "bio": "Respected clinical physician with extensive experience serving the Byndoor and Kundapura coastal community.",
+      "isActive": true,
+      "avatarColor": "bg-emerald-600"
+    },
+    {
+      "id": "doc_cardio",
+      "name": "Dr. Prashanth Kumar",
+      "title": "Consultant Cardiologist (KMC Manipal)",
+      "degrees": "MBBS, MD, DM (Cardiology)",
+      "department": "Cardiology (Visiting Specialty)",
+      "specialty": "Interventional Cardiology, Heart Failure & Arrhythmia",
+      "isVisitingKMC": true,
+      "availableDays": [
+        2,
+        4,
+        6
+      ],
+      "workingHours": {
+        "start": "10:00",
+        "end": "16:00",
+        "breakStart": "13:00",
+        "breakEnd": "13:45"
+      },
+      "serviceIds": [
+        "srv_cardio"
+      ],
+      "bio": "Senior Faculty & Consultant Cardiologist from Kasturba Hospital, KMC Manipal.",
+      "isActive": true,
+      "avatarColor": "bg-blue-600"
+    },
+    {
+      "id": "doc_ortho",
+      "name": "Dr. Rohith Manipal",
+      "title": "Consultant Orthopaedic Surgeon",
+      "degrees": "MBBS, MS (Ortho), DNB, FJR",
+      "department": "Orthopaedics & Joint Care",
+      "specialty": "Joint Reconstruction, Spine Care & Complex Trauma",
+      "isVisitingKMC": true,
+      "availableDays": [
+        1,
+        3,
+        5
+      ],
+      "workingHours": {
+        "start": "09:30",
+        "end": "16:30",
+        "breakStart": "13:00",
+        "breakEnd": "14:00"
+      },
+      "serviceIds": [
+        "srv_ortho"
+      ],
+      "bio": "Specialist orthopaedic surgeon with high surgical volume at KMC Manipal.",
+      "isActive": true,
+      "avatarColor": "bg-cyan-700"
+    },
+    {
+      "id": "doc_obg",
+      "name": "Dr. Shwetha Rao",
+      "title": "Consultant Obstetrician & Gynaecologist",
+      "degrees": "MBBS, MS (OBG), DGO",
+      "department": "Obstetrics & Gynaecology",
+      "specialty": "High-risk Pregnancy, Adolescent Health & Infertility",
+      "isVisitingKMC": false,
+      "availableDays": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "workingHours": {
+        "start": "09:00",
+        "end": "17:00",
+        "breakStart": "13:00",
+        "breakEnd": "14:00"
+      },
+      "serviceIds": [
+        "srv_obg"
+      ],
+      "bio": "Dedicated women’s health specialist providing empathetic prenatal care.",
+      "isActive": true,
+      "avatarColor": "bg-rose-600"
+    },
+    {
+      "id": "doc_eye",
+      "name": "Dr. Ananya Shenoy",
+      "title": "Consultant Ophthalmologist",
+      "degrees": "MBBS, MS (Ophthalmology)",
+      "department": "Ophthalmology",
+      "specialty": "Cataract, Glaucoma & Medical Retina",
+      "isVisitingKMC": false,
+      "availableDays": [
+        2,
+        4,
+        6
+      ],
+      "workingHours": {
+        "start": "09:30",
+        "end": "16:00",
+        "breakStart": "13:00",
+        "breakEnd": "14:00"
+      },
+      "serviceIds": [
+        "srv_eye"
+      ],
+      "bio": "Experienced eye specialist focused on preventing vision loss.",
+      "isActive": true,
+      "avatarColor": "bg-indigo-600"
+    },
+    {
+      "id": "doc_gisurg",
+      "name": "Dr. Vignesh Kamath",
+      "title": "Visiting Consultant GI Surgeon (KMC Manipal)",
+      "degrees": "MBBS, MS, MCh (Surgical Gastroenterology)",
+      "department": "GI Surgery & Gastroenterology",
+      "specialty": "Advanced Laparoscopy, Gallbladder & Colorectal Care",
+      "isVisitingKMC": true,
+      "availableDays": [
+        3,
+        6
+      ],
+      "workingHours": {
+        "start": "10:30",
+        "end": "15:30",
+        "breakStart": "13:00",
+        "breakEnd": "13:45"
+      },
+      "serviceIds": [
+        "srv_gisurgery"
+      ],
+      "bio": "Fellowship-trained surgical gastroenterologist from KMC Manipal.",
+      "isActive": true,
+      "avatarColor": "bg-teal-700"
+    },
+    {
+      "id": "doc_nephro",
+      "name": "Dr. Sandeep Shetty",
+      "title": "Nephrology & Dialysis Clinical Supervisor",
+      "degrees": "MBBS, MD, Fellowship in Clinical Nephrology",
+      "department": "Hemodialysis Unit",
+      "specialty": "Renal Care, Hemodialysis Protocol & Vascular Access",
+      "isVisitingKMC": false,
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "workingHours": {
+        "start": "06:30",
+        "end": "20:30",
+        "breakStart": "13:30",
+        "breakEnd": "14:30"
+      },
+      "serviceIds": [
+        "srv_dialysis"
+      ],
+      "bio": "Oversees the KMC-partnered modern dialysis center in Byndoor.",
+      "isActive": true,
+      "avatarColor": "bg-sky-700"
+    },
+    {
+      "id": "doc_emergency",
+      "name": "Duty Medical Officer (Casualty Roster)",
+      "title": "Emergency Medical Officer",
+      "degrees": "MBBS, ACLS/BLS Certified",
+      "department": "24x7 Casualty & Trauma",
+      "specialty": "Emergency Triage, Acute Resuscitation & Trauma Care",
+      "isVisitingKMC": false,
+      "availableDays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "workingHours": {
+        "start": "00:00",
+        "end": "23:59"
+      },
+      "serviceIds": [
+        "srv_emergency"
+      ],
+      "bio": "Resident medical officers on continuous round-the-clock shift roster for immediate accident response.",
+      "isActive": true,
+      "avatarColor": "bg-red-600"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "apt_seed_1",
+      "bookingReference": "KMC-ANJ-2026-8812",
+      "accessToken": "5059ddcf86f749861f227eaa643419a1",
+      "serviceId": "srv_genmed",
+      "serviceName": "General Medicine & Diabetology",
+      "serviceCategory": "Primary Care",
+      "fee": 350,
+      "durationMinutes": 15,
+      "staffId": "doc_genmed",
+      "doctorName": "Dr. K. Narayana Bhat",
+      "doctorSpecialty": "Internal Medicine & Diabetes",
+      "date": "2026-10-11",
+      "startTime": "10:00",
+      "endTime": "10:15",
+      "customer": {
+        "fullName": "Prabhakar Shenoy",
+        "phone": "+91 98451 22340",
+        "email": "shenoy.p@example.com",
+        "age": 58,
+        "gender": "male",
+        "reasonForVisit": "Routine diabetic blood sugar follow up and prescription refill",
+        "isExistingPatient": true,
+        "uhidNumber": "AH-BYN-4920"
+      },
+      "status": "confirmed",
+      "paymentStatus": "pay_at_hospital",
+      "notes": "Patient requested morning slot.",
+      "internalNotes": "Prior diabetic records available in counter register. HbA1c target < 7.0.",
+      "createdAt": "2026-10-10T16:13:42.890Z",
+      "updatedAt": "2026-10-11T16:13:42.890Z"
+    },
+    {
+      "id": "apt_seed_2",
+      "bookingReference": "KMC-ANJ-2026-8813",
+      "accessToken": "b9c6e942d7ed4b7336875b462b949916",
+      "serviceId": "srv_dialysis",
+      "serviceName": "Advanced Hemodialysis Session (KMC Manipal Protocol)",
+      "serviceCategory": "Specialized Care",
+      "fee": 1500,
+      "durationMinutes": 240,
+      "staffId": "doc_nephro",
+      "doctorName": "Dr. Sandeep Shetty",
+      "doctorSpecialty": "Renal Care & Dialysis",
+      "date": "2026-10-11",
+      "startTime": "07:00",
+      "endTime": "11:00",
+      "customer": {
+        "fullName": "Saroja Devadiga",
+        "phone": "+91 94812 39012",
+        "age": 62,
+        "gender": "female",
+        "reasonForVisit": "Regular Bi-weekly Hemodialysis Shift 1",
+        "isExistingPatient": true,
+        "uhidNumber": "AH-BYN-2011"
+      },
+      "status": "checked_in",
+      "paymentStatus": "pay_at_hospital",
+      "notes": "Arriving with attendant.",
+      "internalNotes": "Station 2 allocated. Pre-dialysis weight 58.4 kg. High-flux membrane primed.",
+      "vitals": {
+        "bp": "136/84",
+        "pulse": 76,
+        "temp": 98.4,
+        "spo2": 98,
+        "triageCategory": "Routine",
+        "recordedBy": "Sr. Mary D'Souza",
+        "recordedAt": "2026-10-11T16:13:42.890Z"
+      },
+      "createdAt": "2026-10-09T16:13:42.890Z",
+      "updatedAt": "2026-10-11T16:13:42.890Z"
+    },
+    {
+      "id": "apt_1791736598328_g15v",
+      "bookingReference": "KMC-ANJ-2026-1607",
+      "accessToken": "a4614b1d056903bf971b3e0e672f8e9651254f12d820a36b",
+      "serviceId": "srv_genmed",
+      "serviceName": "General Medicine & Diabetology",
+      "serviceCategory": "Primary Care",
+      "fee": 350,
+      "durationMinutes": 15,
+      "staffId": "doc_genmed",
+      "doctorName": "Dr. K. Narayana Bhat",
+      "doctorSpecialty": "Internal Medicine, Diabetes & Preventive Health",
+      "date": "2026-10-15",
+      "startTime": "10:00",
+      "endTime": "10:15",
+      "customer": {
+        "fullName": "Manikanta Poojari",
+        "phone": "9876543210",
+        "email": "manikantapoojari86@gmail.com",
+        "age": 32,
+        "gender": "male",
+        "reasonForVisit": "General health checkup and diabetic review",
+        "isExistingPatient": false
+      },
+      "status": "confirmed",
+      "paymentStatus": "pay_at_hospital",
+      "notes": "Testing Supabase integration",
+      "createdAt": "2026-10-11T16:36:38.328Z",
+      "updatedAt": "2026-10-11T16:36:38.328Z"
+    },
+    {
+      "id": "apt_1791799324940_i527",
+      "bookingReference": "KMC-ANJ-2026-6965",
+      "accessToken": "7acd52fbb8a528b12adb55114368d1c41d98c82e1225146b",
+      "serviceId": "srv_genmed",
+      "serviceName": "General Medicine & Diabetology",
+      "serviceCategory": "Primary Care",
+      "fee": 350,
+      "durationMinutes": 15,
+      "staffId": "doc_genmed",
+      "doctorName": "Dr. K. Narayana Bhat",
+      "doctorSpecialty": "Internal Medicine, Diabetes & Preventive Health",
+      "date": "2026-10-16",
+      "startTime": "11:00",
+      "endTime": "11:15",
+      "customer": {
+        "fullName": "Manikanta Poojari Verification Test",
+        "phone": "8296036672",
+        "email": "manikantapoojari86@gmail.com",
+        "age": 25,
+        "gender": "male",
+        "reasonForVisit": "General health checkup and Supabase verification"
+      },
+      "status": "confirmed",
+      "paymentStatus": "pay_at_hospital",
+      "notes": "Booked via automated verification test",
+      "createdAt": "2026-10-12T10:02:04.940Z",
+      "updatedAt": "2026-10-12T10:02:04.940Z"
+    },
+    {
+      "id": "apt_1792300106446_vse9",
+      "bookingReference": "KMC-ANJ-2026-4879",
+      "accessToken": "b099b5ad8159ebbd5f8ae00e21b70a3e33cc36b24a39ff1a",
+      "serviceId": "srv_genmed",
+      "serviceName": "General Medicine & Diabetology",
+      "serviceCategory": "Primary Care",
+      "fee": 350,
+      "durationMinutes": 15,
+      "staffId": "doc_genmed",
+      "doctorName": "Dr. K. Narayana Bhat",
+      "doctorSpecialty": "Internal Medicine, Diabetes & Preventive Health",
+      "date": "2026-10-28",
+      "startTime": "09:00",
+      "endTime": "09:15",
+      "customer": {
+        "fullName": "Dr. Test Verification",
+        "email": "verify@kmc.edu",
+        "phone": "9845123456",
+        "gender": "Male",
+        "age": 32,
+        "uhid": "KMC-ANJ-9988",
+        "reason": "Cardiac and general screening"
+      },
+      "status": "confirmed",
+      "paymentStatus": "pay_at_hospital",
+      "createdAt": "2026-10-18T05:08:26.446Z",
+      "updatedAt": "2026-10-18T05:08:26.446Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_1",
+      "author": "Suresh Hegde",
+      "location": "Baindur Resident",
+      "rating": 5,
+      "date": "March 2025",
+      "text": "A life-saving development for Byndoor people! Earlier for dialysis we had to take my father all the way to Kundapura or Manipal twice a week. Clean premises and caring staff.",
+      "serviceMentioned": "Advanced Hemodialysis Session",
+      "verifiedLocal": true
+    },
+    {
+      "id": "rev_2",
+      "author": "Geetha Shetty",
+      "location": "Kundapur Taluk",
+      "rating": 4,
+      "date": "April 2025",
+      "text": "Very cooperative nurses and polite reception. The doctor consultation was thorough.",
+      "serviceMentioned": "Cardiology Specialist OPD",
+      "verifiedLocal": true
+    },
+    {
+      "id": "rev_3",
+      "author": "Mohammed Ismail",
+      "location": "Shiroor",
+      "rating": 5,
+      "date": "May 2025",
+      "text": "Prompt emergency attention when my relative suffered asthma breathlessness late in the evening.",
+      "serviceMentioned": "24x7 Emergency Casualty",
+      "verifiedLocal": true
+    },
+    {
+      "id": "rev_4",
+      "author": "Raghavendra Bhat",
+      "location": "Uppunda",
+      "rating": 4,
+      "date": "June 2025",
+      "text": "Good orthopaedic doctor from KMC Manipal visited. Diagnosed knee osteoarthritis accurately.",
+      "serviceMentioned": "Orthopaedics & Joint Care",
+      "verifiedLocal": true
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_init",
+      "timestamp": "2026-10-11T16:13:42.890Z",
+      "action": "SYSTEM_INIT",
+      "actor": "System",
+      "details": "Hospital database initialized with secure staff accounts and verified Byndoor configuration."
+    },
+    {
+      "id": "log_1791735234065_5bsx",
+      "timestamp": "2026-10-11T16:13:54.065Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-001",
+      "details": "Staff authenticated as administrator (Hospital Administrator) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791735243089_z75a",
+      "timestamp": "2026-10-11T16:14:03.089Z",
+      "action": "LOGIN_FAILED",
+      "actor": "EMP-ADM-001",
+      "details": "Incorrect password for admin@anjalihospitalbyndoor.in from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791735259356_4n6e",
+      "timestamp": "2026-10-11T16:14:19.356Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-DOC-101",
+      "details": "Staff authenticated as doctor (Dr. K. Narayana Bhat) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791735271251_q414",
+      "timestamp": "2026-10-11T16:14:31.251Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-DOC-101",
+      "details": "Staff authenticated as doctor (Dr. K. Narayana Bhat) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791735271254_da99",
+      "timestamp": "2026-10-11T16:14:31.254Z",
+      "action": "ACCESS_DENIED",
+      "actor": "EMP-DOC-101",
+      "details": "Forbidden attempt to access GET /api/admin/staff-accounts requiring roles [administrator]."
+    },
+    {
+      "id": "log_1791735278563_9zlw",
+      "timestamp": "2026-10-11T16:14:38.563Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-001",
+      "details": "Staff authenticated as administrator (Hospital Administrator) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791735284381_7dy1",
+      "timestamp": "2026-10-11T16:14:44.381Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-REC-201",
+      "details": "Staff authenticated as receptionist (Savitha Poojary) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791736598328_sp3f",
+      "timestamp": "2026-10-11T16:36:38.328Z",
+      "action": "CREATE_APPOINTMENT",
+      "actor": "Manikanta Poojari",
+      "details": "Created appointment KMC-ANJ-2026-1607 for General Medicine & Diabetology with Dr. K. Narayana Bhat on 2026-10-15 at 10:00"
+    },
+    {
+      "id": "log_1791799161401_q5pz",
+      "timestamp": "2026-10-12T09:59:21.401Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-086",
+      "details": "Staff authenticated as administrator (Manikanta Poojari) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799167972_pdc3",
+      "timestamp": "2026-10-12T09:59:27.972Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-086",
+      "details": "Staff authenticated as administrator (Manikanta Poojari) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799168017_ki2i",
+      "timestamp": "2026-10-12T09:59:28.017Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-001",
+      "details": "Staff authenticated as administrator (Hospital Administrator) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799168063_ms5w",
+      "timestamp": "2026-10-12T09:59:28.063Z",
+      "action": "LOGIN_FAILED",
+      "actor": "EMP-DOC-101",
+      "details": "Incorrect password for dr.nbhat@anjalihospitalbyndoor.in from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799168108_6vq2",
+      "timestamp": "2026-10-12T09:59:28.108Z",
+      "action": "LOGIN_FAILED",
+      "actor": "EMP-REC-201",
+      "details": "Incorrect password for reception@anjalihospitalbyndoor.in from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799185423_1wfm",
+      "timestamp": "2026-10-12T09:59:45.423Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-086",
+      "details": "Staff authenticated as administrator (Manikanta Poojari) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799185468_1sio",
+      "timestamp": "2026-10-12T09:59:45.468Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-001",
+      "details": "Staff authenticated as administrator (Hospital Administrator) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799185513_htf2",
+      "timestamp": "2026-10-12T09:59:45.513Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-DOC-101",
+      "details": "Staff authenticated as doctor (Dr. K. Narayana Bhat) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799185557_e7fh",
+      "timestamp": "2026-10-12T09:59:45.557Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-REC-201",
+      "details": "Staff authenticated as receptionist (Savitha Poojary) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799185603_2837",
+      "timestamp": "2026-10-12T09:59:45.603Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-NRS-301",
+      "details": "Staff authenticated as nurse (Sr. Mary D'Souza) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799324932_uy3j",
+      "timestamp": "2026-10-12T10:02:04.932Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-086",
+      "details": "Staff authenticated as administrator (Manikanta Poojari) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1791799324940_um7l",
+      "timestamp": "2026-10-12T10:02:04.940Z",
+      "action": "CREATE_APPOINTMENT",
+      "actor": "Manikanta Poojari Verification Test",
+      "details": "Created appointment KMC-ANJ-2026-6965 for General Medicine & Diabetology with Dr. K. Narayana Bhat on 2026-10-16 at 11:00"
+    },
+    {
+      "id": "log_1792300085024_4xtn",
+      "timestamp": "2026-10-18T05:08:05.024Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-086",
+      "details": "Staff authenticated as administrator (Manikanta Poojari) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1792300098209_6tkp",
+      "timestamp": "2026-10-18T05:08:18.209Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-086",
+      "details": "Staff authenticated as administrator (Manikanta Poojari) from IP 127.0.0.1."
+    },
+    {
+      "id": "log_1792300106446_knai",
+      "timestamp": "2026-10-18T05:08:26.446Z",
+      "action": "CREATE_APPOINTMENT",
+      "actor": "Dr. Test Verification",
+      "details": "Created appointment KMC-ANJ-2026-4879 for General Medicine & Diabetology with Dr. K. Narayana Bhat on 2026-10-28 at 09:00"
+    },
+    {
+      "id": "log_1792300956687_mji7",
+      "timestamp": "2026-10-18T05:22:36.687Z",
+      "action": "LOGIN_SUCCESS",
+      "actor": "EMP-ADM-086",
+      "details": "Staff authenticated as administrator (Manikanta Poojari) from IP 127.0.0.1."
+    }
+  ],
+  "staffAccounts": [
+    {
+      "id": "usr_manikanta",
+      "employeeId": "EMP-ADM-086",
+      "fullName": "Manikanta Poojari",
+      "email": "manikantapoojari86@gmail.com",
+      "role": "administrator",
+      "department": "Hospital Administration & Executive",
+      "isActive": true,
+      "createdAt": "2026-10-12T09:59:21.281Z",
+      "passwordSalt": "76b4771775fe6232093e0095a634120b",
+      "passwordHash": "dd811d830f9825c2e3da2ad22ddda4250a45c03c4889ed4abe3756ca04dc9a1163b2c3fbbf6bd14c3e53b38bbd7143dd921e0ed5bfb8e73192cf074bb1ae957c",
+      "lastLoginAt": "2026-10-18T05:22:36.687Z"
+    },
+    {
+      "id": "usr_admin",
+      "employeeId": "EMP-ADM-001",
+      "fullName": "Hospital Administrator",
+      "email": "admin@anjalihospitalbyndoor.in",
+      "role": "administrator",
+      "department": "Hospital Administration",
+      "isActive": true,
+      "createdAt": "2026-10-11T16:13:42.956Z",
+      "passwordSalt": "ef3239549ba8e190d10935bb02027289",
+      "passwordHash": "add24bcb0aecb4e8761bcb8c69cf7fd4f1d8812630659143fc651b522117ed73b661973e484b83da7bf1a7c594489f43e399121935ab7dcd5fc83b90968d1263",
+      "lastLoginAt": "2026-10-12T09:59:45.468Z"
+    },
+    {
+      "id": "usr_doc_genmed",
+      "employeeId": "EMP-DOC-101",
+      "fullName": "Dr. K. Narayana Bhat",
+      "email": "dr.nbhat@anjalihospitalbyndoor.in",
+      "role": "doctor",
+      "department": "General Medicine & Diabetology",
+      "staffProfileId": "doc_genmed",
+      "isActive": true,
+      "createdAt": "2026-10-11T16:13:43.017Z",
+      "passwordSalt": "1a3e447ecf609c199416b66ed88f7bdc",
+      "passwordHash": "1e2edf4175521f0602554a0d76fc59bbe627e8a23fbd9e4e3fa3b55a90a8a28b0daa725136a60bfaef6e4cef571dac6addc63c65e64e1fe359b11a689ac8bd4b",
+      "lastLoginAt": "2026-10-12T09:59:45.513Z"
+    },
+    {
+      "id": "usr_doc_cardio",
+      "employeeId": "EMP-DOC-102",
+      "fullName": "Dr. Prashanth Kumar",
+      "email": "dr.pkumar@anjalihospitalbyndoor.in",
+      "role": "doctor",
+      "department": "Cardiology (Visiting Specialty)",
+      "staffProfileId": "doc_cardio",
+      "isActive": true,
+      "createdAt": "2026-10-11T16:13:43.063Z",
+      "passwordSalt": "e26d4eda9d004956e14d0c7fc4e5cd64",
+      "passwordHash": "e95d81dbc360a3b0cf9736d14c29f67ad98eb5cfdbb7694a96ba5509515638f695bba0082364d3efcf9bdb7091cd0661c5e46a49466cd20c2da959a6d672fb16"
+    },
+    {
+      "id": "usr_doc_nephro",
+      "employeeId": "EMP-DOC-103",
+      "fullName": "Dr. Sandeep Shetty",
+      "email": "dr.sshetty@anjalihospitalbyndoor.in",
+      "role": "doctor",
+      "department": "Hemodialysis Unit",
+      "staffProfileId": "doc_nephro",
+      "isActive": true,
+      "createdAt": "2026-10-11T16:13:43.107Z",
+      "passwordSalt": "09bfe7f7bc0f92035e7f299d1f651307",
+      "passwordHash": "300c84e85c21f6d1dc2b24cdb0c6fe03f64b12efc5155fd888a2e003ebf744f9ff483016147e919db6dd74f97b419aedd4e1fa361cbf6b2550f0620d182bdf72"
+    },
+    {
+      "id": "usr_doc_obg",
+      "employeeId": "EMP-DOC-104",
+      "fullName": "Dr. Shwetha Rao",
+      "email": "dr.srao@anjalihospitalbyndoor.in",
+      "role": "doctor",
+      "department": "Obstetrics & Gynaecology",
+      "staffProfileId": "doc_obg",
+      "isActive": true,
+      "createdAt": "2026-10-11T16:13:43.168Z",
+      "passwordSalt": "8302a3b81878a5ecbe79b19b494b64bd",
+      "passwordHash": "3b5b64fe88aa042f999fe38f3f5e0fc0a705652156aa3561fd90397bd5cb97e6107d4a4d3a765bb4d5e0a744be8abe5907a061ff98a6b097a3dc62377a21866d"
+    },
+    {
+      "id": "usr_reception",
+      "employeeId": "EMP-REC-201",
+      "fullName": "Savitha Poojary",
+      "email": "reception@anjalihospitalbyndoor.in",
+      "role": "receptionist",
+      "department": "Front Desk & OPD Registration",
+      "isActive": true,
+      "createdAt": "2026-10-11T16:13:43.215Z",
+      "passwordSalt": "83399277d07f5f12ea25571bee927aa9",
+      "passwordHash": "8b2508aa02a7686e7969b4b2aa68cac76d46fd8bb34bb83165d275da442c6548a3a0a12dbefc8459fe2142fd2993939e90c89587b836670f1e576861d27a531e",
+      "lastLoginAt": "2026-10-12T09:59:45.557Z"
+    },
+    {
+      "id": "usr_nurse_dialysis",
+      "employeeId": "EMP-NRS-301",
+      "fullName": "Sr. Mary D'Souza",
+      "email": "dialysis.nurse@anjalihospitalbyndoor.in",
+      "role": "nurse",
+      "department": "Hemodialysis Unit",
+      "isActive": true,
+      "createdAt": "2026-10-11T16:13:43.260Z",
+      "passwordSalt": "3a3301496ea82f8617822245b7cf8a1a",
+      "passwordHash": "c78d8a38b6475642c374d50121337244f1951bd7385fd62d27e63367b58db716aa7f1811d07a2e52b728e102f0c121f0d4ecb0f11640ff8a3cead6f9399745bb",
+      "lastLoginAt": "2026-10-12T09:59:45.602Z"
+    },
+    {
+      "id": "usr_nurse_casualty",
+      "employeeId": "EMP-NRS-302",
+      "fullName": "Rekha Devadiga",
+      "email": "casualty.nurse@anjalihospitalbyndoor.in",
+      "role": "nurse",
+      "department": "24x7 Casualty & Trauma",
+      "isActive": true,
+      "createdAt": "2026-10-11T16:13:43.306Z",
+      "passwordSalt": "31ccb905728cb52e6845df1de96cde8e",
+      "passwordHash": "f0a80d11219cf27172013fff50813d50474dc872c5771c34bc7577c3b59af70b9e5f4cd2217085326ecdbb1db20900d94d3fcaa2753db0d805c165e9905bb495"
+    }
+  ]
+}
